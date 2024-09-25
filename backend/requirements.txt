@@ -1,0 +1,39 @@
+# Core dependencies
+Flask==2.2.3                     # Web framework
+Flask-Cors==3.0.10               # CORS support for Flask
+Flask-RESTful==0.3.9             # For building REST APIs
+pandas==1.5.3                    # Data manipulation and analysis
+numpy==1.23.5                     # Numerical computations
+scikit-learn==1.1.3              # Machine learning library
+tensorflow==2.11.0               # TensorFlow for AI modeling
+PyYAML==6.0                      # YAML parsing for config files
+requests==2.28.1                 # For making HTTP requests
+
+# IoT dependencies
+Adafruit-DHT==1.4.0              # Library for interfacing with DHT sensors
+RPi.GPIO==0.7.0                  # Raspberry Pi GPIO library (if using Raspberry Pi)
+
+# Testing dependencies
+pytest==7.1.2                    # Testing framework
+pytest-cov==3.0.0                # Coverage reporting
+factory_boy==2.12.0              # Test fixtures
+
+# Logging dependencies
+Flask-Logging==0.1.0             # Simplified logging for Flask
+loguru==0.6.0                    # Simple logging library
+
+# Database dependencies (if needed)
+SQLAlchemy==1.4.39               # ORM for database interaction
+Flask-SQLAlchemy==2.5.1          # SQLAlchemy integration with Flask
+psycopg2-binary==2.9.3           # PostgreSQL adapter (or use a different DB adapter as needed)
+
+# Optional dependencies (depending on your needs)
+gunicorn==20.1.0                 # WSGI HTTP Server for UNIX
+docker==5.0.3                    # Docker SDK for Python (if needed for Docker interactions)
+
+# AI model development
+opencv-python==4.6.0.66          # For image processing in accident detection
+matplotlib==3.6.1                 # Plotting library for visualizations (optional)
+
+# Documentation
+flasgger==0.9.5                  # Flask API documentation
