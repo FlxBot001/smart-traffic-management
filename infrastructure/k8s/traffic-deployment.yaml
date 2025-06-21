@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smart-traffic-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: smart-traffic-backend
+  template:
+    metadata:
+      labels:
+        app: smart-traffic-backend
+    spec:
+      containers:
+        - name: backend
+          image: your-dockerhub-username/smart-traffic-backend:latest
+          ports:
+            - containerPort: 8000
